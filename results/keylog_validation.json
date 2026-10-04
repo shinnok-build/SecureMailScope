@@ -1,0 +1,55 @@
+{
+ "bytes_c2s": 1599,
+ "bytes_s2c": 2884,
+ "capture": "imaps_tls13_keylog.pcap",
+ "capture_sha256": "9124a3ce39a9997a1507423a2a0b328322f457b716f9112b3e04deb685b4c797",
+ "caveats": "the endpoint and the capture are local, and a keylog is only available to an operator who owns an endpoint - that is the honest precondition of this route. Without a keylog the certificate stays 'not observable' and we say so; this run shows what the same capture yields when the precondition is met.",
+ "certificate": {
+  "chain_anchored": true,
+  "chain_len": 1,
+  "chain_note": "chain verified to trusted anchor",
+  "days_left": 119,
+  "issuer": "CN=MailScope Test Root CA",
+  "key_bits": 256,
+  "key_type": "EC",
+  "not_after": "2027-02-01 07:37:06",
+  "not_before": "2026-09-27 07:37:06",
+  "san_matches_host": true,
+  "sans": [
+   "mail.corp.example"
+  ],
+  "serial": "406980813389845914322363082773950736712749482495",
+  "sig_alg": "sha256",
+  "subject": "CN=mail.corp.example"
+ },
+ "certificate_matches_served": true,
+ "chain_len_recovered": 1,
+ "client_negotiated": {
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "version": "TLSv1.3"
+ },
+ "decrypted": {
+  "client_random": "1fa5c04ad6e523451edf60a1183cb851f559c36fc5b67dd8f3b2a413c7caf024",
+  "client_secret_present": true,
+  "decrypted_bytes": 975,
+  "messages": [
+   "EncryptedExtensions",
+   "Certificate",
+   "CertificateVerify",
+   "Finished"
+  ],
+  "offered_suites": [
+   4866,
+   4867,
+   4865
+  ],
+  "suite": "TLS_AES_256_GCM_SHA384",
+  "suite_id": 4866
+ },
+ "host": "mail.corp.example",
+ "keylog": "sslkeylog.txt",
+ "method": "real TLS 1.3 IMAPS handshake between Python ssl (OpenSSL) endpoints, captured at a relay - the same tap position as the live validation; the certificate is recovered from the encrypted handshake using the SSLKEYLOGFILE the client wrote, by deriving the handshake traffic keys (HKDF-Expand-Label, RFC 8446 s7.1) and opening the records (AES-GCM, per-record nonce from the sequence number)",
+ "recovered_cert_sha256": "fb22361aaaaaa571a40501e773fe813ea7b91f77a039f9ec2bfd9e6d293091af",
+ "served_cert_sha256": "fb22361aaaaaa571a40501e773fe813ea7b91f77a039f9ec2bfd9e6d293091af",
+ "server_banner": "* OK [CAPABILITY IMAP4rev1 AUTH=PLAIN] SecureMailScope test server"
+}

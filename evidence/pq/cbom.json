@@ -1,0 +1,202 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-04T08:45:21Z",
+  "tools": [
+   {
+    "vendor": "SecureMailScope",
+    "name": "mailscope_cbom",
+    "version": "1.0"
+   }
+  ],
+  "component": {
+   "type": "application",
+   "name": "SecureMailScope",
+   "bom-ref": "mailscope"
+  }
+ },
+ "components": [
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "tls-1.3",
+   "name": "TLS 1.3",
+   "cryptoProperties": {
+    "assetType": "protocol",
+    "protocolProperties": {
+     "type": "tls",
+     "version": "1.3",
+     "cipherSuites": [
+      {
+       "name": "TLS_AES_256_GCM_SHA384",
+       "identifiers": [
+        "0x1302"
+       ],
+       "algorithms": []
+      }
+     ]
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pq/pq-classical-993.pcap"
+     },
+     {
+      "location": "ms_pq/pq-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-mismatch-993.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:AES-256-GCM",
+   "name": "AES-256-GCM",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "aead",
+     "classicalSecurityLevel": 256
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pq/pq-classical-993.pcap"
+     },
+     {
+      "location": "ms_pq/pq-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-mismatch-993.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "hash:SHA-384",
+   "name": "SHA-384",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "hash",
+     "classicalSecurityLevel": 192
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pq/pq-classical-993.pcap"
+     },
+     {
+      "location": "ms_pq/pq-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-mismatch-993.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "ka:X25519MLKEM768",
+   "name": "X25519MLKEM768",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "key-agree",
+     "classicalSecurityLevel": 128,
+     "nistQuantumSecurityLevel": 3
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "true"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pq/pq-hybrid-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-hybrid-993.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "ka:x25519",
+   "name": "x25519",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "key-agree",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pq/pq-classical-993.pcap"
+     },
+     {
+      "location": "ms_pq/q-mismatch-993.pcap"
+     }
+    ]
+   }
+  }
+ ],
+ "properties": [
+  {
+   "name": "mailscope:sessions-graded",
+   "value": "4"
+  },
+  {
+   "name": "mailscope:captures-read",
+   "value": "4"
+  },
+  {
+   "name": "mailscope:post-quantum-sessions",
+   "value": "2"
+  },
+  {
+   "name": "mailscope:pqc-ready",
+   "value": "true"
+  }
+ ]
+}

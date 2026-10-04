@@ -1,0 +1,97 @@
+{
+ "generated": "2026-10-04T08:45:16Z",
+ "engine": "mailscope_bench.analyse (shipped policy library)",
+ "sessions": {
+  "pq-hybrid": {
+   "capture": "ms_pq/pq-hybrid-993.pcap",
+   "bytes": 5723,
+   "sha256": "d3771681f5c8b4e428a001bb62d784838da395e605727e0f941af6851a826eba",
+   "graded": {
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_group": "X25519MLKEM768",
+    "pq_offered": [
+     "X25519MLKEM768"
+    ],
+    "findings": [],
+    "posture": 100
+   }
+  },
+  "pq-classical": {
+   "capture": "ms_pq/pq-classical-993.pcap",
+   "bytes": 3458,
+   "sha256": "fce92604363f58d2ce4607753e9d9496ee3e6936ed82294a3babc12b89838f6b",
+   "graded": {
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_group": null,
+    "pq_offered": [],
+    "findings": [],
+    "posture": 100
+   }
+  }
+ },
+ "decryption": {
+  "capture": "ms_pq/pq-hybrid-993.pcap",
+  "keylog": "ms_keylog/pq_keylog.txt",
+  "suite": "TLS_AES_256_GCM_SHA384",
+  "handshake_messages": [
+   "EncryptedExtensions",
+   "Certificate",
+   "CertificateVerify",
+   "Finished"
+  ],
+  "decrypted_bytes": 975,
+  "key_exchange": "X25519MLKEM768",
+  "recovered_subject": "CN=mail.corp.example",
+  "recovered_issuer": "CN=MailScope Test Root CA",
+  "not_valid_after": "2027-02-01",
+  "checks": {
+   "subject": "CN=mail.corp.example",
+   "issuer": "CN=MailScope Test Root CA",
+   "serial": "406980813389845914322363082773950736712749482495",
+   "sans": [
+    "mail.corp.example"
+   ],
+   "san_matches_host": true,
+   "key_type": "EC",
+   "key_bits": 256,
+   "sig_alg": "sha256",
+   "not_before": "2026-09-27 07:37:06",
+   "not_after": "2027-02-01 07:37:06",
+   "days_left": 119,
+   "chain_len": 1,
+   "chain_anchored": true,
+   "chain_note": "chain verified to trusted anchor"
+  }
+ },
+ "negative_control": {
+  "result": "clean refusal",
+  "message": "the keylog has no SERVER_HANDSHAKE_TRAFFIC_SECRET for this ClientHello",
+  "meaning": "without the endpoint keylog a stored hybrid capture cannot be opened, even by an attacker who holds the classical private key"
+ },
+ "capability_mismatch": {
+  "capture": "ms_pq/q-mismatch-993.pcap (built by the shipped generator: client offers X25519MLKEM768, server selects x25519)",
+  "rule": "P1",
+  "fired": true,
+  "evidence": "client offered X25519MLKEM768; server selected x25519",
+  "severity": "LOW"
+ },
+ "group_registry": {
+  "hybrid": {
+   "0x200": "MLKEM512",
+   "0x201": "MLKEM768",
+   "0x202": "MLKEM1024",
+   "0x11eb": "X25519Kyber768Draft00",
+   "0x11ec": "X25519MLKEM768",
+   "0x11ed": "SecP256r1MLKEM768",
+   "0x11ee": "SecP384r1MLKEM1024",
+   "0x6399": "X25519Kyber768Draft00 (Chrome draft codepoint)"
+  },
+  "note": "read from the wire: the negotiated group comes out of the ServerHello key_share extension"
+ }
+}

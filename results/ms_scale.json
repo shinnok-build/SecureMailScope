@@ -1,0 +1,20 @@
+{
+ "analysis_sample": 2000,
+ "analysis_seconds_median": 0.416,
+ "analysis_sessions_per_second": 4803.0,
+ "capture_bytes": 17978691,
+ "capture_mb": 17.15,
+ "caveats": "sessions are synthetic and generated on the same machine that grades them; a real mirror port also has to write the capture to disk, so this measures the analysis pipeline, not the switch or the disk",
+ "corpus_baseline_sessions_per_second": 2818.6,
+ "findings": 4108,
+ "generation_seconds": 100.4,
+ "generation_sessions_per_second": 49.8,
+ "method": "one process, single thread; the pipeline figure reads every capture back from disk, reassembles both directions and grades it (generation of the synthetic corpus is timed separately and excluded); the analysis figure grades pre-parsed sessions, median of 3 passes, so it is comparable with the 448-session headline rate",
+ "peak_rss_mb": 107.5,
+ "pipeline_seconds": 2.63,
+ "pipeline_sessions_per_second": 1900.7,
+ "posture_mean": 83.7,
+ "reassembly_byte_exact": "10000/10000",
+ "sessions": 5000,
+ "wall_seconds": 115.29
+}

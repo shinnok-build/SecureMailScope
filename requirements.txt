@@ -1,0 +1,5 @@
+scapy>=2.5
+cryptography>=42
+scikit-learn>=1.3
+numpy>=1.24
+pymupdf>=1.23

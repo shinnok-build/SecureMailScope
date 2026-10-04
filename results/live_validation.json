@@ -1,0 +1,1175 @@
+{
+ "generated": "2026-10-04T08:42:20+00:00",
+ "method": "real public mail infrastructure across SMTP/IMAPS/POP3S and both TLS modes (explicit and implicit), recorded at a local relay (our documented tap position) and graded by mailscope_bench.analyse() with the OS public trust store as anchors and the real hostname pinned; payload bytes verbatim, addresses pseudonymised by the pcap writer. The two 'trap-*' entries are OUR OWN deliberately downgraded sessions - controlled positives that the engine must catch, not provider misconfiguration. Note: ports 143 and 110 at the large providers accepted TCP but never sent a cleartext banner from this vantage point, so explicit-TLS coverage rests on SMTP (7 providers) plus GMX POP3/110; IMAP and POP3 are covered implicitly on 993/995.",
+ "targets": [
+  {
+   "name": "smtp-gmail-587-tls13",
+   "host": "smtp.gmail.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 smtp.gmail.com ESMTP 98e67ed59e1d1-3a78e4cd01asm5879296a91.14 - gsmtp",
+   "ehlo_reply": "250-smtp.gmail.com at your service, [136.117.33.252]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 Ready to start TLS",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec  3 19:23:19 2026 GMT",
+    "subject": {
+     "commonName": "smtp.gmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1668,
+   "relay_bytes_s2c": 5468,
+   "pcap_bytes": 8560,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "smtp-gmail-587-tls12",
+   "host": "smtp.gmail.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 smtp.gmail.com ESMTP d9443c01a7336-2e49f70daeesm22126255ad.69 - gsmtp",
+   "ehlo_reply": "250-smtp.gmail.com at your service, [136.117.33.252]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 Ready to start TLS",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.2",
+    "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+    "not_after": "Dec  3 19:23:19 2026 GMT",
+    "subject": {
+     "commonName": "smtp.gmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.2"
+   },
+   "relay_bytes_c2s": 321,
+   "relay_bytes_s2c": 4581,
+   "pcap_bytes": 6466,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.2",
+    "cipher": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+    "ja3": "a7ffcd8d85bd1866261ce8514853fc9b",
+    "ja4": "t12d140800_1257f90867e7_00c65e23f13f",
+    "chain_len": 3,
+    "chain_ok": 1,
+    "keybits": 256,
+    "sigalg": "sha256",
+    "days_left": 60,
+    "san_ok": 1,
+    "subject": "CN=smtp.gmail.com",
+    "issuer": "CN=WR2,O=Google Trust Services,C=US",
+    "ncert": 3,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": "EC",
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": []
+   }
+  },
+  {
+   "name": "smtp-outlook-587-tls12",
+   "host": "smtp.office365.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 MW4PR03CA0138.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sun, 4 Oct 2026 08:42:02 +0000 [08DF214F5DF38BA4]",
+   "ehlo_reply": "250-MW4PR03CA0138.outlook.office365.com Hello [136.117.33.252]\r\n250-SIZE 157286400\r\n250-PIPELINING\r\n250-DSN\r\n250-ENHANCEDSTATUSCODES\r\n250-STARTTLS\r\n250-8BITMIME\r\n250-BINARYMIME\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 SMTP server ready",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.2",
+    "cipher": "ECDHE-RSA-AES256-GCM-SHA384",
+    "not_after": "Jan 10 23:59:59 2027 GMT",
+    "subject": {
+     "countryName": "US",
+     "stateOrProvinceName": "Washington",
+     "localityName": "Redmond",
+     "organizationName": "Microsoft Corporation",
+     "commonName": "outlook.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "commonName": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.2"
+   },
+   "relay_bytes_c2s": 390,
+   "relay_bytes_s2c": 4320,
+   "pcap_bytes": 6274,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.2",
+    "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+    "ja3": "a7ffcd8d85bd1866261ce8514853fc9b",
+    "ja4": "t12d140800_1257f90867e7_00c65e23f13f",
+    "chain_len": 2,
+    "chain_ok": 1,
+    "keybits": 2048,
+    "sigalg": "sha256",
+    "days_left": 98,
+    "san_ok": 1,
+    "subject": "CN=outlook.com,O=Microsoft Corporation,L=Redmond,ST=Washington,C=US",
+    "issuer": "CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1,O=DigiCert Inc,C=US",
+    "ncert": 2,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": "RSA",
+    "ke_group": "P-384",
+    "pq": false,
+    "pq_offered": []
+   }
+  },
+  {
+   "name": "smtp-zoho-587",
+   "host": "smtp.zoho.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 smtp.zohomail.com SMTP Server ready October 4, 2026 1:42:03 AM PDT",
+   "ehlo_reply": "250-smtp.zohomail.com Hello probe.local (252.33.117.136.bc.googleusercontent.com (136.117.33.252))\r\n250-STARTTLS\r\n250 SIZE 32505856\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 Ready to start TLS.",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "not_after": "Jan 29 23:59:59 2027 GMT",
+    "subject": {
+     "commonName": "*.zoho.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "organizationalUnitName": "www.digicert.com",
+     "commonName": "Thawte TLS RSA CA G1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1621,
+   "relay_bytes_s2c": 3502,
+   "pcap_bytes": 6547,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected x25519",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "smtp-fastmail-587",
+   "host": "smtp.fastmail.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 smtp.fastmail.com ESMTP ready",
+   "ehlo_reply": "250-smtp.fastmail.com\r\n250-PIPELINING\r\n250-SIZE 71000000\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250 STARTTLS\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 Start TLS",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec 13 00:20:05 2026 GMT",
+    "subject": {
+     "commonName": "*.fastmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Let's Encrypt",
+     "commonName": "YR2"
+    },
+    "chain_len": 4,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1641,
+   "relay_bytes_s2c": 6094,
+   "pcap_bytes": 9579,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "smtp-yahoo-587",
+   "host": "smtp.mail.yahoo.com",
+   "port": 587,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 smtp.mail.yahoo.com ESMTP ready",
+   "ehlo_reply": "250-hermes--production-gq1-fd7994565-7lk72 Hello probe.local [136.117.33.252])\r\n250-PIPELINING\r\n250-ENHANCEDSTATUSCODES\r\n250-8BITMIME\r\n250-SIZE 41697280\r\n250 STARTTLS\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 Ready to start TLS",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "not_after": "Oct 28 23:59:59 2026 GMT",
+    "subject": {
+     "countryName": "US",
+     "stateOrProvinceName": "New York",
+     "localityName": "New York",
+     "organizationName": "Yahoo Holdings Inc.",
+     "commonName": "smtp.mail.yahoo.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "commonName": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1627,
+   "relay_bytes_s2c": 4282,
+   "pcap_bytes": 7193,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected x25519",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "smtp-google-mx-25",
+   "host": "aspmx.l.google.com",
+   "port": 25,
+   "mode": "starttls",
+   "proto": "smtp",
+   "banner": "220 mx.google.com ESMTP 41be03b00d2f7-ccb76a3f3acsi7099304a12.335 - gsmtp",
+   "ehlo_reply": "250-mx.google.com at your service, [136.117.33.252]\r\n250-SIZE 157286400\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "220 2.0.0 Ready to start TLS",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.2",
+    "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+    "not_after": "Dec  3 19:23:19 2026 GMT",
+    "subject": {
+     "commonName": "mx.google.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.2"
+   },
+   "relay_bytes_c2s": 325,
+   "relay_bytes_s2c": 5201,
+   "pcap_bytes": 7090,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.2",
+    "cipher": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+    "ja3": "a7ffcd8d85bd1866261ce8514853fc9b",
+    "ja4": "t12d140800_1257f90867e7_00c65e23f13f",
+    "chain_len": 3,
+    "chain_ok": 1,
+    "keybits": 256,
+    "sigalg": "sha256",
+    "days_left": 60,
+    "san_ok": 1,
+    "subject": "CN=mx.google.com",
+    "issuer": "CN=WR2,O=Google Trust Services,C=US",
+    "ncert": 3,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": "EC",
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": []
+   }
+  },
+  {
+   "name": "smtps-gmail-465",
+   "host": "smtp.gmail.com",
+   "port": 465,
+   "mode": "implicit",
+   "proto": "smtp",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec  3 19:23:19 2026 GMT",
+    "subject": {
+     "commonName": "smtp.gmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1640,
+   "relay_bytes_s2c": 5194,
+   "pcap_bytes": 7628,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "imaps-gmail-993",
+   "host": "imap.gmail.com",
+   "port": 993,
+   "mode": "implicit",
+   "proto": "imap",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec  3 19:23:18 2026 GMT",
+    "subject": {
+     "commonName": "imap.gmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1610,
+   "relay_bytes_s2c": 5160,
+   "pcap_bytes": 7564,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "imaps-outlook-993",
+   "host": "outlook.office365.com",
+   "port": 993,
+   "mode": "implicit",
+   "proto": "imap",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Jan 10 23:59:59 2027 GMT",
+    "subject": {
+     "countryName": "US",
+     "stateOrProvinceName": "Washington",
+     "localityName": "Redmond",
+     "organizationName": "Microsoft Corporation",
+     "commonName": "outlook.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "commonName": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 2134,
+   "relay_bytes_s2c": 4050,
+   "pcap_bytes": 7468,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected P-384",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "00c601dd77ecf7825f848c4ce7c83dd0",
+    "ja4": "t13d171100_ab0a1bf427ad_e76c45a2d926",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "P-384",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "imaps-zoho-993",
+   "host": "imap.zoho.com",
+   "port": 993,
+   "mode": "implicit",
+   "proto": "imap",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "not_after": "Jan 29 23:59:59 2027 GMT",
+    "subject": {
+     "commonName": "*.zoho.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "organizationalUnitName": "www.digicert.com",
+     "commonName": "Thawte TLS RSA CA G1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1593,
+   "relay_bytes_s2c": 3272,
+   "pcap_bytes": 5659,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected x25519",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "imaps-fastmail-993",
+   "host": "imap.fastmail.com",
+   "port": 993,
+   "mode": "implicit",
+   "proto": "imap",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec 13 00:20:05 2026 GMT",
+    "subject": {
+     "commonName": "*.fastmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Let's Encrypt",
+     "commonName": "YR2"
+    },
+    "chain_len": 4,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1613,
+   "relay_bytes_s2c": 5927,
+   "pcap_bytes": 8894,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "pop3-gmx-110-stls",
+   "host": "pop.gmx.com",
+   "port": 110,
+   "mode": "starttls-pop3",
+   "proto": "pop3",
+   "banner": "+OK POP server ready H migmx008 1MEBrr-1xNUvT2D8H-00AMDo",
+   "ehlo_reply": "+OK Capability list follows\r\nTOP\r\nUIDL\r\nSTLS\r\nSASL\r\nIMPLEMENTATION trinity\r\n.\r\n",
+   "starttls_offered": true,
+   "starttls_reply": "+OK Begin TLS negotiation",
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Oct 29 23:59:59 2026 GMT",
+    "subject": {
+     "countryName": "DE",
+     "stateOrProvinceName": "Rheinland-Pfalz",
+     "organizationName": "1&1 Mail & Media GmbH",
+     "commonName": "mout.gmx.com"
+    },
+    "issuer": {
+     "countryName": "GB",
+     "organizationName": "Sectigo Limited",
+     "commonName": "Sectigo Public Server Authentication CA OV R36"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1619,
+   "relay_bytes_s2c": 5929,
+   "pcap_bytes": 9182,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected x25519",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "pop3s-gmail-995",
+   "host": "pop.gmail.com",
+   "port": 995,
+   "mode": "implicit",
+   "proto": "pop3",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Dec  3 19:23:18 2026 GMT",
+    "subject": {
+     "commonName": "pop.gmail.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "Google Trust Services",
+     "commonName": "WR2"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1609,
+   "relay_bytes_s2c": 5160,
+   "pcap_bytes": 7563,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [],
+    "posture": 100,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "X25519MLKEM768",
+    "pq": true,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "pop3s-outlook-995",
+   "host": "outlook.office365.com",
+   "port": 995,
+   "mode": "implicit",
+   "proto": "pop3",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "not_after": "Jan 10 23:59:59 2027 GMT",
+    "subject": {
+     "countryName": "US",
+     "stateOrProvinceName": "Washington",
+     "localityName": "Redmond",
+     "organizationName": "Microsoft Corporation",
+     "commonName": "outlook.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "commonName": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 2134,
+   "relay_bytes_s2c": 4050,
+   "pcap_bytes": 7468,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected P-384",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "ja3": "00c601dd77ecf7825f848c4ce7c83dd0",
+    "ja4": "t13d171100_ab0a1bf427ad_e76c45a2d926",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "P-384",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "pop3s-zoho-995",
+   "host": "pop.zoho.com",
+   "port": 995,
+   "mode": "implicit",
+   "proto": "pop3",
+   "banner": "",
+   "ehlo_reply": "",
+   "starttls_offered": true,
+   "python_ssl_verified": true,
+   "python_ssl": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "not_after": "Jan 29 23:59:59 2027 GMT",
+    "subject": {
+     "commonName": "*.zoho.com"
+    },
+    "issuer": {
+     "countryName": "US",
+     "organizationName": "DigiCert Inc",
+     "organizationalUnitName": "www.digicert.com",
+     "commonName": "Thawte TLS RSA CA G1"
+    },
+    "chain_len": 3,
+    "key_type": "TLSV1.3"
+   },
+   "relay_bytes_c2s": 1592,
+   "relay_bytes_s2c": 3272,
+   "pcap_bytes": 5658,
+   "mailscope": {
+    "advertised_starttls": false,
+    "stripped": false,
+    "findings": [
+     {
+      "id": "P1",
+      "sev": "LOW",
+      "cvss": 2.8,
+      "title": "Post-quantum key agreement offered by the client but not selected (harvest-now-decrypt-later exposure)",
+      "ev": "client offered X25519MLKEM768; server selected x25519",
+      "standard": "NIST IR 8547 / BSI TR-02102-2"
+     }
+    ],
+    "posture": 92,
+    "tls": "TLS 1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256",
+    "ja3": "df8f11a2d47b2cf7a6cb8cb98108b973",
+    "ja4": "t13d171000_ab0a1bf427ad_ce456193259a",
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": 0,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": "x25519",
+    "pq": false,
+    "pq_offered": [
+     "X25519MLKEM768"
+    ]
+   }
+  },
+  {
+   "name": "trap-smtp-587-withheld",
+   "host": "smtp.gmail.com",
+   "port": 587,
+   "mode": "withhold",
+   "proto": "smtp",
+   "banner": "220 smtp.gmail.com ESMTP 98e67ed59e1d1-3a78d6878d2sm6016144a91.8 - gsmtp",
+   "ehlo_reply": "250-smtp.gmail.com at your service, [136.117.33.252]\r\n250-SIZE 35882577\r\n250-8BITMIME\r\n250-STARTTLS\r\n250-ENHANCEDSTATUSCODES\r\n250-PIPELINING\r\n250-CHUNKING\r\n250 SMTPUTF8\r\n",
+   "starttls_offered": true,
+   "python_ssl": {},
+   "relay_bytes_c2s": 53,
+   "relay_bytes_s2c": 549,
+   "pcap_bytes": 1676,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": true,
+    "findings": [
+     {
+      "id": "A1",
+      "sev": "CRITICAL",
+      "cvss": 8.2,
+      "title": "STARTTLS advertised but session never upgraded (stripping signature)",
+      "ev": "server advertised STARTTLS; no ClientHello ever observed on the stream; mail credentials sent in cleartext after the offer",
+      "standard": "RFC 3207 / RFC 8461"
+     }
+    ],
+    "posture": 74,
+    "tls": null,
+    "cipher": null,
+    "ja3": null,
+    "ja4": null,
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": null,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": null,
+    "pq": false,
+    "pq_offered": []
+   }
+  },
+  {
+   "name": "trap-pop3-gmx-110-withheld",
+   "host": "pop.gmx.com",
+   "port": 110,
+   "mode": "withhold-pop3",
+   "proto": "pop3",
+   "banner": "+OK POP server ready H migmx101 1M9H03-1xIUy80PJP-005DjY",
+   "ehlo_reply": "+OK Capability list follows\r\nTOP\r\nUIDL\r\nSTLS\r\nSASL\r\nIMPLEMENTATION trinity\r\n.\r\n",
+   "starttls_offered": true,
+   "python_ssl": {},
+   "relay_bytes_c2s": 30,
+   "relay_bytes_s2c": 258,
+   "pcap_bytes": 1152,
+   "mailscope": {
+    "advertised_starttls": true,
+    "stripped": true,
+    "findings": [
+     {
+      "id": "A1",
+      "sev": "CRITICAL",
+      "cvss": 8.2,
+      "title": "STARTTLS advertised but session never upgraded (stripping signature)",
+      "ev": "server advertised STARTTLS; no ClientHello ever observed on the stream; mail credentials sent in cleartext after the offer",
+      "standard": "RFC 3207 / RFC 8461"
+     }
+    ],
+    "posture": 74,
+    "tls": null,
+    "cipher": null,
+    "ja3": null,
+    "ja4": null,
+    "chain_len": null,
+    "chain_ok": null,
+    "keybits": null,
+    "sigalg": null,
+    "days_left": null,
+    "san_ok": null,
+    "subject": null,
+    "issuer": null,
+    "ncert": null,
+    "reasm": {
+     "events": {
+      "out_of_order": 0,
+      "retransmit": 0,
+      "overlap": 0
+     }
+    },
+    "keyalg": null,
+    "ke_group": null,
+    "pq": false,
+    "pq_offered": []
+   }
+  }
+ ]
+}

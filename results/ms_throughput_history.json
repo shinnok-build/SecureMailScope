@@ -1,0 +1,34 @@
+[
+ {
+  "utc": "2026-09-27T13:35:47Z",
+  "vintage": "reps16-pop3-448",
+  "sessions": 448,
+  "native_sessions_per_second": 3006.1,
+  "scapy_sessions_per_second": 174.3,
+  "native_speedup_vs_scapy": 17.2
+ },
+ {
+  "utc": "2026-09-27T13:36:17Z",
+  "vintage": "reps16-pop3-448",
+  "sessions": 448,
+  "native_sessions_per_second": 4421.9,
+  "scapy_sessions_per_second": 175.2,
+  "native_speedup_vs_scapy": 25.2
+ },
+ {
+  "utc": "2026-09-27T13:36:46Z",
+  "vintage": "reps16-pop3-448",
+  "sessions": 448,
+  "native_sessions_per_second": 2855.1,
+  "scapy_sessions_per_second": 158.3,
+  "native_speedup_vs_scapy": 18.0
+ },
+ {
+  "utc": "2026-09-27T13:49:26Z",
+  "vintage": "reps16-pop3-448",
+  "sessions": 448,
+  "native_sessions_per_second": 2818.6,
+  "scapy_sessions_per_second": 175.7,
+  "native_speedup_vs_scapy": 16.0
+ }
+]

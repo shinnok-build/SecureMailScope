@@ -1,0 +1,8330 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-04T08:45:23Z",
+  "tools": [
+   {
+    "vendor": "SecureMailScope",
+    "name": "mailscope_cbom",
+    "version": "1.0"
+   }
+  ],
+  "component": {
+   "type": "application",
+   "name": "SecureMailScope",
+   "bom-ref": "mailscope"
+  }
+ },
+ "components": [
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "tls-1.0",
+   "name": "TLS 1.0",
+   "cryptoProperties": {
+    "assetType": "protocol",
+    "protocolProperties": {
+     "type": "tls",
+     "version": "1.0",
+     "cipherSuites": [
+      {
+       "name": "TLS_RSA_WITH_AES_128_CBC_SHA1",
+       "identifiers": [
+        "0x002f"
+       ],
+       "algorithms": []
+      }
+     ]
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "tls-1.1",
+   "name": "TLS 1.1",
+   "cryptoProperties": {
+    "assetType": "protocol",
+    "protocolProperties": {
+     "type": "tls",
+     "version": "1.1",
+     "cipherSuites": [
+      {
+       "name": "TLS_RSA_WITH_AES_128_CBC_SHA1",
+       "identifiers": [
+        "0x002f"
+       ],
+       "algorithms": []
+      }
+     ]
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "tls-1.2",
+   "name": "TLS 1.2",
+   "cryptoProperties": {
+    "assetType": "protocol",
+    "protocolProperties": {
+     "type": "tls",
+     "version": "1.2",
+     "cipherSuites": [
+      {
+       "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+       "identifiers": [
+        "0xc02f"
+       ],
+       "algorithms": []
+      },
+      {
+       "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+       "identifiers": [
+        "0x000a"
+       ],
+       "algorithms": []
+      },
+      {
+       "name": "TLS_RSA_WITH_AES_128_CBC_SHA1",
+       "identifiers": [
+        "0x002f"
+       ],
+       "algorithms": []
+      },
+      {
+       "name": "TLS_RSA_WITH_RC4_128_SHA",
+       "identifiers": [
+        "0x0005"
+       ],
+       "algorithms": []
+      },
+      {
+       "name": "UNKNOWN_0x5600",
+       "identifiers": [
+        "0x5600"
+       ],
+       "algorithms": []
+      }
+     ]
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "tls-1.3",
+   "name": "TLS 1.3",
+   "cryptoProperties": {
+    "assetType": "protocol",
+    "protocolProperties": {
+     "type": "tls",
+     "version": "1.3",
+     "cipherSuites": [
+      {
+       "name": "TLS_AES_128_GCM_SHA256",
+       "identifiers": [
+        "0x1301"
+       ],
+       "algorithms": []
+      },
+      {
+       "name": "TLS_AES_256_GCM_SHA384",
+       "identifiers": [
+        "0x1302"
+       ],
+       "algorithms": []
+      }
+     ]
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/clean-imaps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "auth:RSA",
+   "name": "RSA",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "signature",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:3DES-EDE-CBC",
+   "name": "3DES-EDE-CBC",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "cipher",
+     "classicalSecurityLevel": 0
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:AES-128-CBC",
+   "name": "AES-128-CBC",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "cipher",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:AES-128-GCM",
+   "name": "AES-128-GCM",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "aead",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:AES-256-GCM",
+   "name": "AES-256-GCM",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "aead",
+     "classicalSecurityLevel": 256
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/clean-imaps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "enc:RC4",
+   "name": "RC4",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "cipher",
+     "classicalSecurityLevel": 0
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "hash:SHA-1",
+   "name": "SHA-1",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "hash",
+     "classicalSecurityLevel": 63
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    },
+    {
+     "name": "pqc:weak-hash",
+     "value": "true"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "hash:SHA-256",
+   "name": "SHA-256",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "hash",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "hash:SHA-384",
+   "name": "SHA-384",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "hash",
+     "classicalSecurityLevel": 192
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/clean-imaps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "ka:x25519",
+   "name": "x25519",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "key-agree",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imaps_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3s_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtps_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "kex:ECDHE",
+   "name": "ECDHE",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "key-agree",
+     "classicalSecurityLevel": 128
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "kex:RSA",
+   "name": "RSA",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "key-agree",
+     "classicalSecurityLevel": 0
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "pk:RSA-1024",
+   "name": "RSA-1024",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "pke",
+     "classicalSecurityLevel": 1024
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "pk:RSA-2048",
+   "name": "RSA-2048",
+   "cryptoProperties": {
+    "assetType": "algorithm",
+    "algorithmProperties": {
+     "primitive": "pke",
+     "classicalSecurityLevel": 2048
+    }
+   },
+   "properties": [
+    {
+     "name": "pqc:post-quantum",
+     "value": "false"
+    }
+   ],
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_9.pcap"
+     }
+    ]
+   }
+  },
+  {
+   "type": "cryptographic-asset",
+   "bom-ref": "cert:CN=mail.corp.example",
+   "name": "CN=mail.corp.example",
+   "cryptoProperties": {
+    "assetType": "certificate",
+    "certificateProperties": {
+     "subjectName": "CN=mail.corp.example",
+     "issuerName": "CN=MailScope Test Root CA",
+     "certificateFormat": "X.509",
+     "signatureAlgorithmRef": "sig:sha256",
+     "subjectPublicKeyRef": "pk:RSA-2048"
+    }
+   },
+   "evidence": {
+    "occurrences": [
+     {
+      "location": "ms_pcaps/a-customstack_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-customstack_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-evasion_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/a-selfsigned_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-imap_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-pop3_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/clean-smtp_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-coalesce_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/p-frag_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-3des_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-eku_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-expired_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-longlife_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-nofs_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rc4_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-rsa1024_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-san_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-sha1_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls10_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-tls11_9.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_0.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_1.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_10.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_11.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_12.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_13.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_14.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_15.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_2.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_3.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_4.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_5.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_6.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_7.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_8.pcap"
+     },
+     {
+      "location": "ms_pcaps/w-unknown_9.pcap"
+     }
+    ]
+   }
+  }
+ ],
+ "properties": [
+  {
+   "name": "mailscope:sessions-graded",
+   "value": "368"
+  },
+  {
+   "name": "mailscope:captures-read",
+   "value": "368"
+  },
+  {
+   "name": "mailscope:post-quantum-sessions",
+   "value": "0"
+  },
+  {
+   "name": "mailscope:pqc-ready",
+   "value": "false"
+  }
+ ]
+}

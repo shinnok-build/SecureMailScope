@@ -1,0 +1,274 @@
+{
+ "corpus": {
+  "pcap_files": 448,
+  "sessions": 448,
+  "bytes": 1610044,
+  "manifest_sha256": "125308493aafc4f8308897c1439943bf179be7d12dea97709eb9c349496211c4",
+  "protocols": [
+   "imap",
+   "pop3",
+   "smtp"
+  ],
+  "tls_versions_observed": [
+   "0x0301",
+   "0x0302",
+   "0x0303",
+   "0x0304"
+  ],
+  "distinct_ja4": 338,
+  "distinct_ja3": 351
+ },
+ "precision": {
+  "tcp_reassembly": {
+   "method": "RFC 9293 sequence-based (out-of-order, retransmit, overlap)",
+   "streams_checked": 896,
+   "byte_exact": 896,
+   "accuracy": 1.0,
+   "perturbations_handled": {
+    "out_of_order": 437,
+    "retransmit": 368,
+    "overlap": 736
+   },
+   "wilson95": [
+    0.9957,
+    1.0
+   ]
+  },
+  "tls_defragmentation": {
+   "method": "cross-record handshake accumulation",
+   "fragmented_sessions": 16,
+   "coalesced_sessions": 16,
+   "parsed_ok": 32
+  },
+  "registry": {
+   "cipher_suites": 37,
+   "named_groups": 8,
+   "unknown_suite_rule": "W9 (never silently accepted)",
+   "kex_derivation": "registry-derived (kex/auth/enc/mac + forward secrecy)"
+  },
+  "chain_validation": {
+   "method": "RFC 5280 path validation: anchor signature re-verified, issuer basicConstraints CA checked, EKU serverAuth, CA/B 398-day lifetime"
+  }
+ },
+ "detection": {
+  "A1": {
+   "detected": 48,
+   "total": 48,
+   "recall": 1.0
+  },
+  "A2": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "A3": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "A4": {
+   "detected": 32,
+   "total": 32,
+   "recall": 1.0
+  },
+  "W1": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W10": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W11": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W2": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W3": {
+   "detected": 32,
+   "total": 32,
+   "recall": 1.0
+  },
+  "W4": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W5": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W6": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W7": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W8": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  },
+  "W9": {
+   "detected": 16,
+   "total": 16,
+   "recall": 1.0
+  }
+ },
+ "detection_summary": {
+  "weakness_and_attack_classes": 15,
+  "classes_at_100pct_recall": 15,
+  "planted_instances": 304,
+  "detected_instances": 304,
+  "recall_wilson95": [
+   0.9875,
+   1.0
+  ]
+ },
+ "false_positives": {
+  "clean_sessions": 144,
+  "clean_with_hard_finding": 0,
+  "rate": 0.0,
+  "wilson95": [
+   0.0,
+   0.026
+  ]
+ },
+ "ai": {
+  "supervised": "GradientBoostingClassifier over raw handshake/X.509 attributes (JA4-derived vector)",
+  "held_out_n": 111,
+  "held_out_accuracy": 0.9459,
+  "held_out_f1": 0.9538,
+  "brier": 0.0454,
+  "cv5_accuracy": [
+   0.9566,
+   0.0197
+  ],
+  "cv5_f1": [
+   0.9627,
+   0.0178
+  ],
+  "held_out_confusion": {
+   "tn": 43,
+   "fp": 0,
+   "fn": 6,
+   "tp": 62
+  },
+  "anomaly_primary": "DeviationModel: nominal-attribute surprise score vs org baseline, 3-sigma MAD limit",
+  "anomaly_baseline_sessions": 108,
+  "anomaly_eval_sessions": 36,
+  "anomaly_split": "baseline replicas 0-11, scored on replicas 12-15 (disjoint)",
+  "custom_tls_stack_flagged": "16/16",
+  "unseen_clean_flagged": "12/36",
+  "anomaly_margin": {
+   "cust_min": 21.79,
+   "clean_max": 15.87,
+   "threshold": 10.66
+  },
+  "anomaly_attributes_responsible": [
+   "nc0-2",
+   "ne0-2"
+  ],
+  "anomaly_secondary_isolationforest": {
+   "custom_tls_stack_flagged": "0/16",
+   "unseen_clean_flagged": "3/36",
+   "verdict": "under-performs alone: few attributes separate the outlier"
+  },
+  "ja4_allowlist_custom_stack_flagged": "16/16",
+  "ja4_allowlist_unseen_clean_flagged": "32/36",
+  "conclusion": "JA4 allowlist brittle on heterogeneous fleets; deviation model + deterministic policy authoritative."
+ },
+ "evasion_resistance": {
+  "sessions": 16,
+  "distinct_ja3": 14,
+  "distinct_ja4": 1
+ },
+ "throughput": {
+  "method": "median of 3 passes, single thread, laptop CPU; headline rate is the WORST of the recorded repeat runs (floor-safe), not the best",
+  "history_file": "ms_throughput_history.json",
+  "runs_recorded": 4,
+  "last_run_utc": "2026-09-27T13:49:26Z",
+  "sessions": 448,
+  "native_seconds": 0.159,
+  "native_sessions_per_second": 2818.6,
+  "native_display": 2800,
+  "native_display_text": "2,800+ sessions/s",
+  "native_display_scope": "worst of 4 recorded runs on this host, single thread",
+  "last_run_sessions_per_second": 4421.9,
+  "scapy_seconds": 2.55,
+  "scapy_sessions_per_second": 175.7,
+  "native_speedup_vs_scapy": 16.0,
+  "history": [
+   {
+    "utc": "2026-09-27T13:35:47Z",
+    "vintage": "reps16-pop3-448",
+    "sessions": 448,
+    "native_sessions_per_second": 3006.1,
+    "scapy_sessions_per_second": 174.3,
+    "native_speedup_vs_scapy": 17.2
+   },
+   {
+    "utc": "2026-09-27T13:36:17Z",
+    "vintage": "reps16-pop3-448",
+    "sessions": 448,
+    "native_sessions_per_second": 4421.9,
+    "scapy_sessions_per_second": 175.2,
+    "native_speedup_vs_scapy": 25.2
+   },
+   {
+    "utc": "2026-09-27T13:36:46Z",
+    "vintage": "reps16-pop3-448",
+    "sessions": 448,
+    "native_sessions_per_second": 2855.1,
+    "scapy_sessions_per_second": 158.3,
+    "native_speedup_vs_scapy": 18.0
+   },
+   {
+    "utc": "2026-09-27T13:49:26Z",
+    "vintage": "reps16-pop3-448",
+    "sessions": 448,
+    "native_sessions_per_second": 2818.6,
+    "scapy_sessions_per_second": 175.7,
+    "native_speedup_vs_scapy": 16.0
+   }
+  ]
+ },
+ "posture": {
+  "min": 61,
+  "max": 100,
+  "mean": 83.7,
+  "below_70": 64
+ },
+ "findings_by_severity": {
+  "CRITICAL": 80,
+  "MEDIUM": 144,
+  "HIGH": 144
+ },
+ "policy_library": {
+  "rules": 15,
+  "severities": {
+   "CRITICAL": 3,
+   "HIGH": 7,
+   "MEDIUM": 5
+  },
+  "cvss_range": [
+   4.8,
+   8.2
+  ]
+ },
+ "deliverables_covered": 21,
+ "deliverables_total": 21,
+ "note": "Synthetic corpus per sponsor dataset line. Real X.509 (mini-CA), hand-encoded TLS records, seq-true TCP with planted out-of-order/retransmit/overlap segments, cross-record handshake fragmentation. SHA-1 leaf via DER surgery (modern crypto libs refuse SHA-1)."
+}
